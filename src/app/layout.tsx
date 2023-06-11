@@ -1,5 +1,5 @@
 import Header from './components/Header/Header'
-import './globals.css'
+import './styles/globals.scss'
 import { Poppins } from 'next/font/google'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] })
