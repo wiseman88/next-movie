@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+
+.header__main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding: 2.5rem 3rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.2px;
+        background-image: linear-gradient(to right, transparent, darken($text__color__primary, 80%), transparent);
+    }
+
+    .logo a {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .navigation,
+    ul {
+        display: flex;
+    }
+
+    .navigation {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    ul {
+        gap: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
