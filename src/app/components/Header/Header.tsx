@@ -1,4 +1,5 @@
 import styles from './header.module.scss'
+import { CiGrid41, CiHeart, CiSearch, CiUser } from 'react-icons/ci'
 
 const Header = () => {
   return (
@@ -31,24 +32,24 @@ const Header = () => {
         </ul>
         <ul>
           <li role="none">
-            <a href="" role="menuitem">
-              Search
-            </a>
+            <button type="button" role="menuitem" aria-label="Search">
+              <CiSearch className={styles.icon} />
+            </button>
           </li>
           <li role="none">
-            <a href="" role="menuitem">
-              Online
-            </a>
+            <button type="button" role="menuitem">
+              <CiHeart className={styles.icon} />
+            </button>
           </li>
           <li role="none">
-            <a href="" role="menuitem">
-              Icon
-            </a>
+            <button type="button" role="menuitem">
+              <CiGrid41 className={styles.icon} />
+            </button>
           </li>
           <li role="none">
-            <a href="" role="menuitem">
-              Avatar
-            </a>
+            <button type="button" role="menuitem">
+              <CiUser className={styles.icon} />
+            </button>
           </li>
         </ul>
       </nav>
